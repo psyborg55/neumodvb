@@ -298,6 +298,8 @@ int options_t::parse_options(int argc, char** argv) {
 			end_freq = 4200000; // in kHz;
 		break;
 	case UNIVERSAL_LNB:
+	case WIDEBAND_LNB:
+	case WIDEBAND_UK_LNB:
 		if (start_freq < 0)
 			start_freq = 10700000; // in kHz;
 		if (end_freq < 0)
