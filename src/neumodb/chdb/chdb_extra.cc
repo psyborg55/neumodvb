@@ -1401,7 +1401,7 @@ int chdb::lnb::freq_for_driver_freq(const chdb::lnb_t& lnb, int frequency, bool 
 		return correct(0, frequency + lof_low);
 	} break;
 	case lnb_type_t::WDBUK: {
-		auto lof_low = lnb.lof_low < 0 ? 10400000 : lnb.lof_low;
+		auto lof_low = lnb.lof_low < 0 ? 10410000 : lnb.lof_low;
 		return correct(0, frequency + lof_low);
 	} break;
 	case lnb_type_t::UNIV: {
