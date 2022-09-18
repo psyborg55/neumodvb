@@ -1024,7 +1024,7 @@ class PositionerDialog(PositionerDialog_):
 
     def OnStorePosition(self, evt):  # wxGlade: PositionerDialog_.<event_handler>
         dtdebug(f"Diseqc12 position stored: {self.tune_mux_panel.diseqc12}")
-        self.diseqc12_command(pychdb.positioner_cmd_t.STORE_NN, self.tune_mux_panel.diseqc12)
+        self.positioner_command(pychdb.positioner_cmd_t.STORE_NN, self.tune_mux_panel.diseqc12)
         evt.Skip()
 
     def OnDiseqc12PositionChanged(self, event):  # wxGlade: PositionerDialog_.<event_handler>
